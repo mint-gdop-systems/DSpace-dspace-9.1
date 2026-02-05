@@ -193,9 +193,9 @@
         <!--Which sidebar facets are to be displayed-->
         <property name="sidebarFacets">
             <list>
-                <ref bean="searchFilterAuthor" />
+                <ref bean="searchFilterFamilyHead" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
                 <ref bean="searchFilterContentInOriginalBundle"/>
                 <!-- <ref bean="searchFilterHasGeospatialMetadata"/> -->
                 <ref bean="searchFilterEntityType"/>
@@ -207,10 +207,10 @@
         <!--The search filters which can be used on the discovery search page-->
         <property name="searchFilters">
             <list>
-                <ref bean="searchFilterTitle" />
-                <ref bean="searchFilterAuthor" />
+                <ref bean="searchFilterHouseFamilyKey" />
+                <ref bean="searchFilterFamilyHead" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
                 <ref bean="searchFilterContentInOriginalBundle"/>
                 <ref bean="searchFilterFileNameInOriginalBundle" />
                 <ref bean="searchFilterFileDescriptionInOriginalBundle" />
@@ -231,8 +231,8 @@
                 <property name="sortFields">
                     <list>
                         <ref bean="sortScore" />
-                        <ref bean="sortTitle" />
-                        <ref bean="sortDateIssued" />
+                        <ref bean="sortHouseFamilyKey" />
+                        <ref bean="sortDateRegistered" />
                         <ref bean="sortDateAccessioned"/>
                     </list>
                 </property>
@@ -285,7 +285,7 @@
                             <property name="snippets" value="2"/>
                         </bean>
                         <bean class="org.dspace.discovery.configuration.DiscoveryHitHighlightFieldConfiguration">
-                            <property name="field" value="dc.title"/>
+                            <property name="field" value="crvs.identifier.houseFamilyKey"/>
                             <property name="snippets" value="5"/>
                         </bean>
                         <bean class="org.dspace.discovery.configuration.DiscoveryHitHighlightFieldConfiguration">
@@ -351,8 +351,8 @@
                     <list>
                         <ref bean="sortDateAccessioned"/>
                         <ref bean="sortScore"/>
-                        <ref bean="sortTitle"/>
-                        <ref bean="sortDateIssued"/>
+                        <ref bean="sortHouseFamilyKey"/>
+                        <ref bean="sortDateRegistered"/>
                     </list>
                 </property>
             </bean>
@@ -368,8 +368,8 @@
                     <list>
                         <ref bean="sortDateAccessioned"/>
                         <ref bean="sortScore"/>
-                        <ref bean="sortTitle"/>
-                        <ref bean="sortDateIssued"/>
+                        <ref bean="sortHouseFamilyKey"/>
+                        <ref bean="sortDateRegistered"/>
                     </list>
                 </property>
             </bean>
@@ -380,9 +380,9 @@
         <!--Which sidebar facets are to be displayed-->
         <property name="sidebarFacets">
             <list>
-                <ref bean="searchFilterAuthor" />
+                <ref bean="searchFilterFamilyHead" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
                 <ref bean="searchFilterContentInOriginalBundle"/>
                 <ref bean="searchFilterEntityType"/>
             </list>
@@ -392,10 +392,10 @@
         <!--The search filters which can be used on the discovery search page-->
         <property name="searchFilters">
             <list>
-                <ref bean="searchFilterTitle" />
-                <ref bean="searchFilterAuthor" />
+                <ref bean="searchFilterHouseFamilyKey" />
+                <ref bean="searchFilterFamilyHead" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
                 <ref bean="searchFilterContentInOriginalBundle"/>
                 <ref bean="searchFilterFileNameInOriginalBundle" />
                 <ref bean="searchFilterFileDescriptionInOriginalBundle" />
@@ -413,8 +413,8 @@
                 <property name="sortFields">
                     <list>
                         <ref bean="sortScore" />
-                        <ref bean="sortTitle" />
-                        <ref bean="sortDateIssued" />
+                        <ref bean="sortHouseFamilyKey" />
+                        <ref bean="sortDateRegistered" />
                         <ref bean="sortDateAccessioned"/>
                     </list>
                 </property>
@@ -468,7 +468,7 @@
                             <property name="snippets" value="2"/>
                         </bean>
                         <bean class="org.dspace.discovery.configuration.DiscoveryHitHighlightFieldConfiguration">
-                            <property name="field" value="dc.title"/>
+                            <property name="field" value="crvs.identifier.houseFamilyKey"/>
                             <property name="snippets" value="5"/>
                         </bean>
                         <!-- By default, full text snippets are disabled, as snippets of embargoed/restricted bitstreams
@@ -519,9 +519,9 @@
         <!--Which sidebar facets are to be displayed-->
         <property name="sidebarFacets">
             <list>
-                <ref bean="searchFilterAuthor" />
+                <ref bean="searchFilterFamilyHead" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
                 <ref bean="searchFilterContentInOriginalBundle"/>
                 <ref bean="searchFilterEntityType"/>
             </list>
@@ -531,10 +531,10 @@
         <!--The search filters which can be used on the discovery search page-->
         <property name="searchFilters">
             <list>
-                <ref bean="searchFilterTitle" />
-                <ref bean="searchFilterAuthor" />
+                <ref bean="searchFilterHouseFamilyKey" />
+                <ref bean="searchFilterFamilyHead" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
                 <ref bean="searchFilterContentInOriginalBundle"/>
                 <ref bean="searchFilterFileNameInOriginalBundle" />
                 <ref bean="searchFilterFileDescriptionInOriginalBundle" />
@@ -552,8 +552,8 @@
                 <property name="sortFields">
                     <list>
                         <ref bean="sortScore" />
-                        <ref bean="sortTitle" />
-                        <ref bean="sortDateIssued" />
+                        <ref bean="sortHouseFamilyKey" />
+                        <ref bean="sortDateRegistered" />
                         <ref bean="sortDateAccessioned"/>
                     </list>
                 </property>
@@ -607,7 +607,7 @@
                             <property name="snippets" value="2"/>
                         </bean>
                         <bean class="org.dspace.discovery.configuration.DiscoveryHitHighlightFieldConfiguration">
-                            <property name="field" value="dc.title"/>
+                            <property name="field" value="crvs.identifier.houseFamilyKey"/>
                             <property name="snippets" value="5"/>
                         </bean>
                         <!-- By default, full text snippets are disabled, as snippets of embargoed/restricted bitstreams
@@ -660,9 +660,9 @@
             <list>
                 <ref bean="searchFilterDiscoverable" />
                 <ref bean="searchFilterWithdrawn" />
-                <ref bean="searchFilterAuthor" />
+                <ref bean="searchFilterFamilyHead" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
                 <ref bean="searchFilterContentInOriginalBundle"/>
                 <ref bean="searchFilterEntityType"/>
                 <ref bean="searchFilterNotifyRelation" />
@@ -677,10 +677,10 @@
             <list>
                 <ref bean="searchFilterDiscoverable" />
                 <ref bean="searchFilterWithdrawn" />
-                <ref bean="searchFilterTitle" />
-                <ref bean="searchFilterAuthor" />
+                <ref bean="searchFilterHouseFamilyKey" />
+                <ref bean="searchFilterFamilyHead" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
                 <ref bean="searchFilterContentInOriginalBundle"/>
                 <ref bean="searchFilterFileNameInOriginalBundle" />
                 <ref bean="searchFilterFileDescriptionInOriginalBundle" />
@@ -701,8 +701,8 @@
                 <property name="sortFields">
                     <list>
                         <ref bean="sortScore" />
-                        <ref bean="sortTitle" />
-                        <ref bean="sortDateIssued" />
+                        <ref bean="sortHouseFamilyKey" />
+                        <ref bean="sortDateRegistered" />
                         <ref bean="sortDateAccessioned"/>
                     </list>
                 </property>
@@ -754,7 +754,7 @@
                             <property name="snippets" value="2"/>
                         </bean>
                         <bean class="org.dspace.discovery.configuration.DiscoveryHitHighlightFieldConfiguration">
-                            <property name="field" value="dc.title"/>
+                            <property name="field" value="crvs.identifier.houseFamilyKey"/>
                             <property name="snippets" value="5"/>
                         </bean>
                         <!-- By default, full text snippets are disabled, as snippets of embargoed/restricted bitstreams
@@ -810,7 +810,7 @@
             <list>
                 <ref bean="searchFilterObjectNamedType" />
                 <ref bean="searchFilterType" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
             </list>
         </property>
         <!--The search filters which can be used on the discovery search page -->
@@ -818,7 +818,7 @@
             <list>
                 <ref bean="searchFilterObjectNamedType" />
                 <ref bean="searchFilterType" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
             </list>
         </property>
         <!--The sort filters for the discovery search-->
@@ -830,8 +830,8 @@
                     <list>
                         <ref bean="sortLastModified" />
                         <ref bean="sortScore" />
-                        <ref bean="sortTitle" />
-                        <ref bean="sortDateIssued" />
+                        <ref bean="sortHouseFamilyKey" />
+                        <ref bean="sortDateRegistered" />
                     </list>
                 </property>
             </bean>
@@ -851,7 +851,7 @@
                 <property name="metadataFields">
                     <list>
                         <bean class="org.dspace.discovery.configuration.DiscoveryHitHighlightFieldConfiguration">
-                            <property name="field" value="dc.title"/>
+                            <property name="field" value="crvs.identifier.houseFamilyKey"/>
                             <property name="snippets" value="5"/>
                         </bean>
                         <bean class="org.dspace.discovery.configuration.DiscoveryHitHighlightFieldConfiguration">
@@ -886,7 +886,7 @@
             <list>
                 <ref bean="searchFilterObjectNamedType" />
                 <ref bean="searchFilterType" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
             </list>
         </property>
         <!--The search filters which can be used on the discovery search page -->
@@ -894,7 +894,7 @@
             <list>
                 <ref bean="searchFilterObjectNamedType" />
                 <ref bean="searchFilterType" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
             </list>
         </property>
         <!--The sort filters for the discovery search-->
@@ -905,8 +905,8 @@
                 <property name="sortFields">
                     <list>
                         <ref bean="sortLastModified" />
-                        <ref bean="sortTitleAsc" />
-                        <ref bean="sortDateIssuedDesc" />
+                        <ref bean="sortHouseFamilyKeyAsc" />
+                        <ref bean="sortDateRegisteredDesc" />
                     </list>
                 </property>
             </bean>
@@ -926,7 +926,7 @@
                 <property name="metadataFields">
                     <list>
                         <bean class="org.dspace.discovery.configuration.DiscoveryHitHighlightFieldConfiguration">
-                            <property name="field" value="dc.title"/>
+                            <property name="field" value="crvs.identifier.houseFamilyKey"/>
                             <property name="snippets" value="5"/>
                         </bean>
                         <bean class="org.dspace.discovery.configuration.DiscoveryHitHighlightFieldConfiguration">
@@ -961,7 +961,7 @@
             <list>
                 <ref bean="searchFilterObjectNamedType" />
                 <ref bean="searchFilterType" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
                 <ref bean="searchFilterSubmitter" />
             </list>
         </property>
@@ -970,7 +970,7 @@
             <list>
                 <ref bean="searchFilterObjectNamedType" />
                 <ref bean="searchFilterType" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
                 <ref bean="searchFilterSubmitter" />
             </list>
         </property>
@@ -981,8 +981,8 @@
                     <list>
                         <ref bean="sortLastModified" />
                         <ref bean="sortScore" />
-                        <ref bean="sortTitle" />
-                        <ref bean="sortDateIssued" />
+                        <ref bean="sortHouseFamilyKey" />
+                        <ref bean="sortDateRegistered" />
                     </list>
                 </property>
             </bean>
@@ -1002,7 +1002,7 @@
                 <property name="metadataFields">
                     <list>
                         <bean class="org.dspace.discovery.configuration.DiscoveryHitHighlightFieldConfiguration">
-                            <property name="field" value="dc.title"/>
+                            <property name="field" value="crvs.identifier.houseFamilyKey"/>
                             <property name="snippets" value="5"/>
                         </bean>
                         <bean class="org.dspace.discovery.configuration.DiscoveryHitHighlightFieldConfiguration">
@@ -1037,7 +1037,7 @@
             <list>
                 <ref bean="searchFilterObjectNamedType" />
                 <ref bean="searchFilterType" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
                 <ref bean="searchFilterSubmitter" />
             </list>
         </property>
@@ -1046,7 +1046,7 @@
             <list>
                 <ref bean="searchFilterObjectNamedType" />
                 <ref bean="searchFilterType" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
                 <ref bean="searchFilterSubmitter" />
             </list>
         </property>
@@ -1056,8 +1056,8 @@
                 <property name="sortFields">
                     <list>
                         <ref bean="sortScore" />
-                        <ref bean="sortTitle" />
-                        <ref bean="sortDateIssued" />
+                        <ref bean="sortHouseFamilyKey" />
+                        <ref bean="sortDateRegistered" />
                     </list>
                 </property>
             </bean>
@@ -1076,7 +1076,7 @@
                 <property name="metadataFields">
                     <list>
                         <bean class="org.dspace.discovery.configuration.DiscoveryHitHighlightFieldConfiguration">
-                            <property name="field" value="dc.title"/>
+                            <property name="field" value="crvs.identifier.houseFamilyKey"/>
                             <property name="snippets" value="5"/>
                         </bean>
                         <bean class="org.dspace.discovery.configuration.DiscoveryHitHighlightFieldConfiguration">
@@ -1110,7 +1110,7 @@
             <list>
                 <ref bean="searchFilterObjectNamedType" />
                 <ref bean="searchFilterType" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
                 <ref bean="searchFilterSubmitter" />
                 <ref bean="searchFilterSupervision" />
             </list>
@@ -1120,7 +1120,7 @@
             <list>
                 <ref bean="searchFilterObjectNamedType" />
                 <ref bean="searchFilterType" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
                 <ref bean="searchFilterSubmitter" />
                 <ref bean="searchFilterSupervision" />
             </list>
@@ -1131,8 +1131,8 @@
                 <property name="sortFields">
                     <list>
                         <ref bean="sortScore" />
-                        <ref bean="sortTitle" />
-                        <ref bean="sortDateIssued" />
+                        <ref bean="sortHouseFamilyKey" />
+                        <ref bean="sortDateRegistered" />
                     </list>
                 </property>
             </bean>
@@ -1151,7 +1151,7 @@
                 <property name="metadataFields">
                     <list>
                         <bean class="org.dspace.discovery.configuration.DiscoveryHitHighlightFieldConfiguration">
-                            <property name="field" value="dc.title"/>
+                            <property name="field" value="crvs.identifier.houseFamilyKey"/>
                             <property name="snippets" value="5"/>
                         </bean>
                         <bean class="org.dspace.discovery.configuration.DiscoveryHitHighlightFieldConfiguration">
@@ -1182,9 +1182,9 @@
         <!--Which sidebar facets are to be displayed-->
         <property name="sidebarFacets">
             <list>
-                <ref bean="searchFilterAuthor" />
+                <ref bean="searchFilterFamilyHead" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
                 <ref bean="searchFilterContentInOriginalBundle"/>
                 <ref bean="searchFilterEntityType"/>
             </list>
@@ -1194,10 +1194,10 @@
         <!--The search filters which can be used on the discovery search page-->
         <property name="searchFilters">
             <list>
-                <ref bean="searchFilterTitle" />
-                <ref bean="searchFilterAuthor" />
+                <ref bean="searchFilterHouseFamilyKey" />
+                <ref bean="searchFilterFamilyHead" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
                 <ref bean="searchFilterContentInOriginalBundle"/>
                 <ref bean="searchFilterFileNameInOriginalBundle" />
                 <ref bean="searchFilterFileDescriptionInOriginalBundle" />
@@ -1215,8 +1215,8 @@
                 <property name="sortFields">
                     <list>
                         <ref bean="sortScore" />
-                        <ref bean="sortTitle" />
-                        <ref bean="sortDateIssued" />
+                        <ref bean="sortHouseFamilyKey" />
+                        <ref bean="sortDateRegistered" />
                         <ref bean="sortDateAccessioned"/>
                     </list>
                 </property>
@@ -1252,9 +1252,9 @@
         <!--Which sidebar facets are to be displayed-->
         <property name="sidebarFacets">
             <list>
-                <ref bean="searchFilterAuthor" />
+                <ref bean="searchFilterFamilyHead" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
                 <ref bean="searchFilterContentInOriginalBundle"/>
                 <ref bean="searchFilterEntityType"/>
             </list>
@@ -1264,10 +1264,10 @@
         <!--The search filters which can be used on the discovery search page-->
         <property name="searchFilters">
             <list>
-                <ref bean="searchFilterTitle" />
-                <ref bean="searchFilterAuthor" />
+                <ref bean="searchFilterHouseFamilyKey" />
+                <ref bean="searchFilterFamilyHead" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterRegistered" />
                 <ref bean="searchFilterContentInOriginalBundle"/>
                 <ref bean="searchFilterFileNameInOriginalBundle" />
                 <ref bean="searchFilterFileDescriptionInOriginalBundle" />
@@ -1285,8 +1285,8 @@
                 <property name="sortFields">
                     <list>
                         <ref bean="sortScore" />
-                        <ref bean="sortTitle" />
-                        <ref bean="sortDateIssued" />
+                        <ref bean="sortHouseFamilyKey" />
+                        <ref bean="sortDateRegistered" />
                         <ref bean="sortDateAccessioned"/>
                     </list>
                 </property>
@@ -1467,7 +1467,7 @@
                 <property name="sortFields">
                     <list>
                         <ref bean="sortScore" />
-                        <ref bean="sortTitle"/>
+                        <ref bean="sortHouseFamilyKey"/>
                     </list>
                 </property>
             </bean>
@@ -1521,7 +1521,7 @@
                 <property name="sortFields">
                     <list>
                         <ref bean="sortScore" />
-                        <ref bean="sortTitle"/>
+                        <ref bean="sortHouseFamilyKey"/>
                     </list>
                 </property>
             </bean>
@@ -1694,7 +1694,7 @@
         <!--The search filters which can be used on the discovery search page-->
         <property name="searchFilters">
             <list>
-                <ref bean="searchFilterTitle"/>
+                <ref bean="searchFilterHouseFamilyKey"/>
                 <ref bean="searchFilterPublicationIssueNumber"/>
                 <ref bean="searchFilterCreativeWorkKeywords"/>
                 <ref bean="searchFilterCreativeWorkDatePublished"/>
@@ -1708,7 +1708,7 @@
                     <list>
                         <ref bean="sortScore" />
                         <ref bean="sortPublicationIssueNumber"/>
-                        <ref bean="sortTitle"/>
+                        <ref bean="sortHouseFamilyKey"/>
                         <ref bean="sortCreativeWorkDatePublished"/>
                         <ref bean="sortDateAccessioned"/>
                     </list>
@@ -1754,7 +1754,7 @@
         <!--The search filters which can be used on the discovery search page-->
         <property name="searchFilters">
             <list>
-                <ref bean="searchFilterTitle"/>
+                <ref bean="searchFilterHouseFamilyKey"/>
                 <ref bean="searchFilterPublicationIssueNumber"/>
                 <ref bean="searchFilterCreativeWorkKeywords"/>
                 <ref bean="searchFilterCreativeWorkDatePublished"/>
@@ -1768,7 +1768,7 @@
                     <list>
                         <ref bean="sortScore" />
                         <ref bean="sortPublicationIssueNumber"/>
-                        <ref bean="sortTitle"/>
+                        <ref bean="sortHouseFamilyKey"/>
                         <ref bean="sortCreativeWorkDatePublished"/>
                         <ref bean="sortDateAccessioned"/>
                     </list>
@@ -1814,7 +1814,7 @@
         <!--The search filters which can be used on the discovery search page-->
         <property name="searchFilters">
             <list>
-                <ref bean="searchFilterTitle"/>
+                <ref bean="searchFilterHouseFamilyKey"/>
                 <ref bean="searchFilterPublicationVolumeNumber"/>
                 <ref bean="searchFilterCreativeWorkDatePublished"/>
                 <ref bean="searchFilterIsIssueOfJournalVolumeRelation"/>
@@ -1828,7 +1828,7 @@
                     <list>
                         <ref bean="sortScore" />
                         <ref bean="sortPublicationVolumeNumber"/>
-                        <ref bean="sortTitle"/>
+                        <ref bean="sortHouseFamilyKey"/>
                         <ref bean="sortCreativeWorkDatePublished"/>
                         <ref bean="sortDateAccessioned"/>
                     </list>
@@ -1873,7 +1873,7 @@
         <!--The search filters which can be used on the discovery search page-->
         <property name="searchFilters">
             <list>
-                <ref bean="searchFilterTitle"/>
+                <ref bean="searchFilterHouseFamilyKey"/>
                 <ref bean="searchFilterPublicationVolumeNumber"/>
                 <ref bean="searchFilterCreativeWorkDatePublished"/>
                 <ref bean="searchFilterIsIssueOfJournalVolumeRelation"/>
@@ -1887,7 +1887,7 @@
                     <list>
                         <ref bean="sortScore" />
                         <ref bean="sortPublicationVolumeNumber"/>
-                        <ref bean="sortTitle"/>
+                        <ref bean="sortHouseFamilyKey"/>
                         <ref bean="sortCreativeWorkDatePublished"/>
                         <ref bean="sortDateAccessioned"/>
                     </list>
@@ -1943,7 +1943,7 @@
                 <property name="sortFields">
                     <list>
                         <ref bean="sortScore" />
-                        <ref bean="sortTitle"/>
+                        <ref bean="sortHouseFamilyKey"/>
                     </list>
                 </property>
             </bean>
@@ -1987,7 +1987,7 @@
         <!--The search filters which can be used on the discovery search page-->
         <property name="searchFilters">
             <list>
-                <ref bean="searchFilterTitle"/>
+                <ref bean="searchFilterHouseFamilyKey"/>
                 <ref bean="searchFilterCreativeWorkPublisher"/>
                 <ref bean="searchFilterCreativeWorkEditor"/>
                 <ref bean="searchFilterIsIssueOfJournalVolumeRelation"/>
@@ -2000,7 +2000,7 @@
                 <property name="sortFields">
                     <list>
                         <ref bean="sortScore" />
-                        <ref bean="sortTitle"/>
+                        <ref bean="sortHouseFamilyKey"/>
                         <ref bean="sortCreativeWorkDatePublished"/>
                         <ref bean="sortDateAccessioned"/>
                     </list>
@@ -2046,7 +2046,7 @@
         <!--The search filters which can be used on the discovery search page-->
         <property name="searchFilters">
             <list>
-                <ref bean="searchFilterTitle"/>
+                <ref bean="searchFilterHouseFamilyKey"/>
                 <ref bean="searchFilterCreativeWorkPublisher"/>
                 <ref bean="searchFilterCreativeWorkEditor"/>
                 <ref bean="searchFilterIsIssueOfJournalVolumeRelation"/>
@@ -2059,7 +2059,7 @@
                 <property name="sortFields">
                     <list>
                         <ref bean="sortScore" />
-                        <ref bean="sortTitle"/>
+                        <ref bean="sortHouseFamilyKey"/>
                         <ref bean="sortCreativeWorkDatePublished"/>
                         <ref bean="sortDateAccessioned"/>
                     </list>
@@ -2228,7 +2228,7 @@
             <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
                 <property name="sortFields">
                     <list>
-                        <ref bean="sortTitle"/>
+                        <ref bean="sortHouseFamilyKey"/>
                     </list>
                 </property>
             </bean>
@@ -2552,11 +2552,11 @@
         <property name="pageSize" value="10"/>
     </bean>
 
-    <bean id="searchFilterTitle" class="org.dspace.discovery.configuration.DiscoverySearchFilter">
-        <property name="indexFieldName" value="title"/>
+    <bean id="searchFilterHouseFamilyKey" class="org.dspace.discovery.configuration.DiscoverySearchFilter">
+        <property name="indexFieldName" value="houseFamilyKey"/>
         <property name="metadataFields">
             <list>
-                <value>dc.title</value>
+                <value>crvs.identifier.houseFamilyKey</value>
             </list>
         </property>
         <property name="isOpenByDefault" value="true"/>
@@ -2619,12 +2619,13 @@
         <property name="pageSize" value="10"/>
     </bean>
 
-    <bean id="searchFilterAuthor" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
-        <property name="indexFieldName" value="author"/>
+    <bean id="searchFilterFamilyHead" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="familyHead"/>
         <property name="metadataFields">
             <list>
-                <value>dc.contributor.author</value>
-                <value>dc.creator</value>
+                <value>crvs.head.husband</value>
+                <value>crvs.head.wife</value>
+                <value>crvs.head.additional</value>
             </list>
         </property>
         <property name="facetLimit" value="5"/>
@@ -2663,11 +2664,11 @@
 
     </bean>
 
-    <bean id="searchFilterIssued" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
-        <property name="indexFieldName" value="dateIssued"/>
+    <bean id="searchFilterRegistered" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dateRegistered"/>
         <property name="metadataFields">
             <list>
-                <value>dc.date.issued</value>
+                <value>crvs.date.registration</value>
             </list>
         </property>
         <property name="type" value="date"/>
@@ -3388,13 +3389,13 @@
         <property name="defaultSortOrder" value="desc"/>
     </bean>
 
-    <bean id="sortTitle" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
-        <property name="metadataField" value="dc.title"/>
+    <bean id="sortHouseFamilyKey" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="crvs.identifier.houseFamilyKey"/>
         <property name="defaultSortOrder" value="asc"/>
     </bean>
 
-    <bean id="sortDateIssued" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
-        <property name="metadataField" value="dc.date.issued"/>
+    <bean id="sortDateRegistered" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="crvs.date.registration"/>
         <property name="type" value="date"/>
         <property name="defaultSortOrder" value="desc"/>
     </bean>
@@ -3491,13 +3492,13 @@
         <property name="defaultSortOrder" value="asc"/>
     </bean>
 
-    <bean id="sortTitleAsc" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
-        <property name="metadataField" value="dc.title"/>
+    <bean id="sortHouseFamilyKeyAsc" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="crvs.identifier.houseFamilyKey"/>
         <property name="defaultSortOrder" value="asc"/>
     </bean>
 
-    <bean id="sortDateIssuedDesc" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
-        <property name="metadataField" value="dc.date.issued"/>
+    <bean id="sortDateRegisteredDesc" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="crvs.date.registration"/>
         <property name="type" value="date"/>
         <property name="defaultSortOrder" value="desc"/>
     </bean>
